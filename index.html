@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Car Insurance</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./app.css" />
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+
+        
+    <form class="form " id="request-quote">
+        <header>Car Insuarance</header>
+        <div class="form-group">
+            <label for=" make ">Make:</label>
+            <select class="form-control" id="selectcountry">
+                <option>India</option>
+                <option>Norway</option>
+                <option>London</option>
+                <option>Germany</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="Year ">Year:</label>
+            <select class="form-control" id="selectyear"></select>
+        </div>
+        <span>Level:</span>
+        <div class="form-check form-check-inline">
+
+            <input type="radio" class="form-check-input" name="level-of-the-car" id="car-level" value="Basic" checked/>
+            <label class="form-check-label" for="basic">Basic</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="level-of-the-car" id="car-level" value="Complete" />
+            <label class="form-check-label" for="complete">Complete</label>
+        </div>
+      <div id="result"></div>
+        
+        <div>
+            <img src="./assets/45.gif" alt="spinner" class="loader" id="spinner" />
+        </div>
+        <div>
+            <button class="btn btn-primary" id="btn">Get Quote</button>
+        </div>
+
+    </form>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
